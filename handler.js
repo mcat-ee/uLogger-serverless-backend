@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports.hello = async (event) => {
+module.exports.http_handler = async (event) => {
   console.log("\n\nCHECKING EVENT");
 
   console.log(JSON.stringify(event));
@@ -40,7 +40,7 @@ module.exports.hello = async (event) => {
        data[innerTerms[0]] = innerTerms[1];
     })
     console.log("\n\n\n");
-    console.log(data);
+    console.log(JSON.stringify(data));
     console.log("\n\n\n");
   }
   return response;
